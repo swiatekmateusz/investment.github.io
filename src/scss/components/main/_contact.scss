@@ -1,5 +1,5 @@
 .contact{
-  background-color: #daf5ff;
+  background-color: #0a688b;
   padding-top: 4rem;
   padding-bottom: 4rem;
   &__item{
@@ -12,10 +12,11 @@
   &__icon{
     padding: 2rem 0 1rem 0;
     font-size: 2rem;
-    color: $primary
+    color: white;
   }
   &__content{
     padding-bottom: 1.5rem;
+    color: white;
   }
   @include media-breakpoint-down(sm){
     &__item{
