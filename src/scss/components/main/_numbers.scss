@@ -1,0 +1,34 @@
+.numbers{
+  padding-bottom: 6rem;
+  &-background{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../../../assets/images/numbers.jpg');
+  }
+  &-wrapper{
+    background-color: rgba(10, 83, 201,.5);
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    span{
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      line-height: 90px;
+      border-radius: 50%;
+      border: 5px solid $primary;
+      color: white;
+      font-size: 2rem;
+    }
+    h4{
+      color: white;
+      margin: auto;
+      padding: 1.5rem 0;
+      font-size: 1.8rem;
+    }
+  }
+  @include heading(2);
+}

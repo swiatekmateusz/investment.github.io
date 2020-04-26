@@ -1,0 +1,31 @@
+.aboutus{
+  padding: 6rem 15px 10rem 15px;
+  text-align: center;
+  @include heading(1);
+  &__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+  }
+  &__wrapper{
+    box-shadow: 25px -25px 0px -4px white, 25px -25px 0px 4px $primary;
+    transform: translateY(25px);
+  }
+  &__content{
+    padding: 2rem 0;
+  }
+  &__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+      max-width: 850px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      @include media-breakpoint-down(md){
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}

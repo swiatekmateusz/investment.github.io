@@ -1,0 +1,32 @@
+@mixin after{
+  &::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,20px);
+    height: 2px;
+    width: 25%;
+    background-color: $primary;
+  }
+}
+
+@mixin heading($variant){
+  &__heading{
+    text-align: center;
+    padding: 4rem 0 6rem 0;
+    h2{
+      color: if($variant == 1, black,white);
+      font-size: 3.5rem;
+      position: relative;
+      @include after
+    }
+    h4{
+      font-size: 1.5rem;
+      margin-bottom: 0;
+      color: if($variant == 1, rgba(0,0,0,.75),$primary);
+    }
+  }
+}
+

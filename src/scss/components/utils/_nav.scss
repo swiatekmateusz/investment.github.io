@@ -1,0 +1,132 @@
+body{
+  font-family: 'Manrope';
+}
+
+.mainmenu{
+  position: fixed;
+  z-index: 2;
+  top:0 ;
+  left: 0;
+  width: 100%;
+  padding: 40px 60px 0 60px;
+  @include media-breakpoint-down(sm){
+    padding: 40px 15px 0 15px; 
+  }
+  transition: .2s linear all;
+  .navbar-toggler{
+    line-height: unset;
+    padding: 0;
+    margin-right: 20px;
+  }
+
+  &-background{
+    background-color: transparent;
+  }
+  &-fixed{
+    padding: 10px 0;
+    background-color: white;
+    z-index: 99;
+    .mainmenu__link{
+      color: $secondary;
+      &:hover{
+        color: $secondary;
+      }
+    }
+    .mainmenu__brand{
+      color: $secondary;
+    }
+    .mainmenu__toggler{
+      color:$secondary;
+    }
+  }
+  &__brand{
+    padding-left: 15px;
+    font-size: 2rem;
+    color: white;
+    &:hover{
+      color: white;
+    }
+  }
+  &__item{
+    margin: 0 .5rem;
+  }
+  &__link{
+    transition: .15s linear all;
+    font-size: 1.4rem;
+    position: relative;
+    color: white;//$secondary;
+    overflow: hidden;
+    &-active{
+      &:after{
+        left: 50%;
+      }
+    }
+    &:hover{
+      color: white;//$secondary;
+      &:after{
+        left: 50%;
+      }
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      top: calc(100% - 3px );
+      left: 150%;
+      transform: translate(-50%);
+      height: 3px;
+      width: 100%;
+      background-color: white;//$secondary;
+      transition: .25s linear all;
+    }
+  }
+  &__feauture{
+    margin-left: 1rem;
+  }
+  &__button{
+    transition: .1s linear all;
+    border: none;
+    background-color: $secondary;
+    padding: .75rem 1rem;
+    color: white;
+    text-transform: uppercase;
+    &:hover{
+      background-color: $secondary-light;
+    }
+  }
+  &__toggler{
+    font-size: 2.5rem;
+    color: white;
+  }
+  &__mobile{
+    min-width: 250px;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 999;
+    background: white;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    transition: .2s linear all;
+    &.active{
+      left: 0;
+    }
+    .mainmenu__feauture{
+      margin: 1rem 0 0 0;
+      text-align: center;
+    }
+    .mainmenu__link{
+      text-align: center;
+      color: $secondary;
+      &:hover{
+        color: $secondary;
+      }
+      &:after{
+        left: 50%;
+        background-color: $secondary;
+        height: 1px;
+        width: 15%;
+      }
+    }
+  }
+}
