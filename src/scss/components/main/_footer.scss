@@ -1,0 +1,17 @@
+footer{
+  background-color: #043243;
+  p{
+    color: white; 
+    text-align: center;
+    margin: 0;
+    padding: 1rem 15px;
+    a{
+      color: $primary;
+      transition: .1s linear all;
+      &:hover{
+        text-decoration: none;
+        color: $primary-light
+      }
+    }
+  }
+}

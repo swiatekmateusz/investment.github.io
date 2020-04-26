@@ -1,0 +1,28 @@
+.contact{
+  background-color: #daf5ff;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  &__item{
+    text-align: center;
+    border-left: $primary 1px solid;
+    &:last-child{
+      border-right: $primary 1px solid;
+    }
+  }
+  &__icon{
+    padding: 2rem 0 1rem 0;
+    font-size: 2rem;
+    color: $primary
+  }
+  &__content{
+    padding-bottom: 1.5rem;
+  }
+  @include media-breakpoint-down(sm){
+    &__item{
+      border: none;
+      &:last-child{
+        border: none;
+      }
+    }
+  }
+}

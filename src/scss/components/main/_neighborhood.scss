@@ -1,11 +1,12 @@
 .neighborhood{
+  padding-top: 3rem;
   @include heading(1);
   &__tiles{
     padding-bottom: 6rem
   }
   &__item{
     display: flex;
-    margin: 15px 0;
+    margin: 25px 0;
     &:nth-child(even){
       flex-direction: row-reverse;
       .neighborhood__content{

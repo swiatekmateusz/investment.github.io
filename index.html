@@ -230,8 +230,193 @@
       </div>
     </section>
     <!-- NEIGHBORHOOD END -->
+    <!-- MAP -->
+    <section>
+      <div class="map container">
+        <div class="map__heading">
+          <h4>Lokalizacja</h4>
+          <h2>Interaktywna mapa</h2>
+        </div>
+        <div class="map__map">
+          <iframe height="500px" width="100%"
+            src="https://geoportal360.pl/map/#l:49.94352,19.86504,16;p:MTIwNjA5XzIuMDAwNi4xNTM="
+            name="iframe_a"></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- MAP END -->
+    <!-- CALL US -->
+    <section>
+      <div class="callus container-fluid px-0" style="background-image: url(./assets/images/callus.jpg);">
+        <div class="callus-overlay">
+          <div class="row m-0">
+            <div class="col-lg-6 col-md-12 callus__content">
+              <h2>Zaciekawiliśmy Cię? Zadzwoń do nas teraz i zapytaj o więcej szczegołów!</h2>
+              <h3><a href="tel:666666666">+48 737 208 492</a></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CALL US END -->
+    <!-- PROJECT -->
+    <section>
+      <div class="project container">
+        <div class="project__heading">
+          <h4>Informacje</h4>
+          <h2>Wszystko co musisz wiedzieć</h2>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="gallery container-fluid">
+        <div class="gallery__heading">
+          <h4>Galeria</h4>
+          <h2>Zobacz jak to będzie wyglądać</h2>
+        </div>
+        <div class="my-gallery row">
+          <figure class="col-md-6 gallery__item">
+            <a href="./assets/images/gallery1.jpg" data-size="1200x677">
+              <img src="./assets/images/gallery1.jpg" alt="Image description" />
+              <div class="gallery__item-overlay"></div>
+            </a>
+          </figure>
+          <figure class="col-md-6 gallery__item">
+            <a href="./assets/images/gallery2.jpg" data-size="1200x677">
+              <img src="./assets/images/gallery2.jpg" alt="Image description" />
+              <div class="gallery__item-overlay"></div>
+            </a>
+          </figure>
+          <figure class="col-md-6 gallery__item">
+            <a href="./assets/images/gallery3.jpg" data-size="1200x677">
+              <img src="./assets/images/gallery3.jpg" alt="Image description" />
+              <div class="gallery__item-overlay"></div>
+            </a>
+          </figure>
+          <figure class="col-md-6 gallery__item">
+            <a href="./assets/images/gallery4.jpg" data-size="1200x677">
+              <img src="./assets/images/gallery4.jpg" alt="Image description" />
+              <div class="gallery__item-overlay"></div>
+            </a>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!-- PROJECT END -->
+    <!-- CONTACT -->
+    <section>
+      <div class="container-fluid contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 contact__item">
+              <div class="contact__icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact__content">
+                <p>
+                  +48 736 742 422<br />
+                  +48 422 492 940
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 contact__item">
+              <div class="contact__icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact__content">
+                <p>
+                  ouremail@gmail.com
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 contact__item">
+              <div class="contact__icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <div class="contact__content">
+                Biuro Sprzedaży<br />
+                os. Stalowe 16<br />
+                31-617 Kraków<br /><br />
+
+                Godziny otwarcia:<br />
+                pon-pt: 09:00-17:00<br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT END -->
   </main>
+  <!-- FOOTER -->
+  <footer>
+    <p>Strona wykonan i wspierana przez <a href="https://web-developer-studio.pl " target="_blank">Web Developer
+        Studio</a>. Wszelkie prawa zastrzezone &copy; 2020</p>
+  </footer>
+  <!-- FOOTER END-->
   <!-- MAIN END -->
+  <!-- LIGHTBOX GALLERY -->
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+       It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides. 
+          PhotoSwipe keeps only 3 of them in the DOM to save memory.
+          Don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+        <div class="pswp__top-bar">
+
+          <!--  Controls are self-explanatory. Order can be changed. -->
+
+          <div class="pswp__counter"></div>
+
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+          <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+          <!-- element will get class pswp__preloader--active when preloader is running -->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+        </button>
+
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+        </button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- LIGHTBOX GALLERY END-->
   <script defer src="./dist/js/bundle.js"></script>
 </body>
 
