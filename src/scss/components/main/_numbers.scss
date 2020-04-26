@@ -1,5 +1,8 @@
 .numbers{
   padding-bottom: 6rem;
+  &-padding{
+    padding-top: 5rem;
+  }
   &-background{
     background-position: center;
     background-size: cover;
