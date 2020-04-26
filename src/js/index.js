@@ -6,3 +6,4 @@
 // include ./gallery.js
 // include ./slider.js
 // include ./menu.js
+// include ./custom.js
