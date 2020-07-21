@@ -60,14 +60,21 @@
     transform: translate(-50%,-50%);
     text-align: center;
     h1{
-      color: white;
-      font-size: 5rem;
-      line-height: 0.9;
-      position: relative;
-      span{
-        font-size: 7rem;
-        color: $primary;
+      a{
+        display: block;
+        width: 40vw;
+        img{
+          width: 100%;
+        }
       }
+      // color: white;
+      // font-size: 5rem;
+      // line-height: 0.9;
+      // position: relative;
+      // span{
+      //   font-size: 7rem;
+      //   color: $primary;
+      // }
       &::after{
         content: "";
         height: 4px;

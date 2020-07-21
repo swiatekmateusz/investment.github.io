@@ -50,6 +50,9 @@ body{
   }
   &__item{
     margin: 0 .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &__link{
     transition: .15s linear all;
@@ -125,6 +128,13 @@ body{
     transition: .2s linear all;
     &.active{
       left: 0;
+    }
+    &__logo{
+      
+      @include media-breakpoint-down(lg){
+        display: block;
+      }
+      display: none;
     }
     .mainmenu__feauture{
       margin: 1rem 0 0 0;

@@ -27,6 +27,14 @@
       margin-bottom: 0;
       color: if($variant == 1, rgba(0,0,0,.75),$primary);
     }
+    @include media-breakpoint-down(sm){
+      h2{
+        font-size: 2.5rem;
+      }
+      h4{
+        font-size: 1.2rem;
+      }
+    }
   }
 }
 
