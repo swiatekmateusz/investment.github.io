@@ -44,6 +44,9 @@
       a{
         color: $primary;
         transition: .1s linear all;
+        @include media-breakpoint-down(sm){
+          font-size: 1.8rem;
+        }
         //text-shadow: 0.1px 0 #fff, 0 0.1px #fff;// 0.25px 0 #fff, 0 -0.25px #fff;
         &:hover{
           text-decoration: none;

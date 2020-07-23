@@ -1,0 +1,87 @@
+.bar{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  width: 100%;
+  transition: .1s linear all;
+  &.hidden{
+    transform: translateY(+100%);
+  }
+  &>div{
+    display: flex;
+  }
+  &__content{
+    font-size: 1.2rem;
+    padding: 15px;
+    text-align: center;
+    @include media-breakpoint-down(md){
+      font-size: 1rem;
+    }
+    @include media-breakpoint-down(sm){
+      font-size: .8rem;
+    }
+  }
+  &__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    i{
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.phone{
+  position: fixed;
+  transition: .1s linear all;
+  right: 40px;
+  bottom: 80px;
+  
+  &.down{
+    bottom: 50px;
+  }
+  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  &__number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: $primary 5px solid;
+    padding: 10px 30px 10px 15px;
+    transform: translateX(25px);
+    border-radius: 2rem;
+    z-index: 55;
+    height: fit-content;
+    color: $secondary;
+  }
+  &__icon{
+    z-index: 66;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 5px solid $primary;
+    color: $primary;
+    display: block;
+    padding: 15px;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  &:hover{
+    i{
+      transform: scale(1.2);
+    }
+  }
+  i{
+    transition: .1s linear all;
+    font-size: 2rem;
+  }
+}

@@ -30,6 +30,7 @@ function menuOnScroll() {
     const section = $item.attr('href');
     const { top } = $(section).offset();
     if (window.scrollY >= top - 100) {
+      console.log(section);
       $('.mainmenu__link-active').removeClass('mainmenu__link-active');
       $item.addClass('mainmenu__link-active');
     } else $item.removeClass('mainmenu__link-active');
