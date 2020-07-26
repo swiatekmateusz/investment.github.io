@@ -7,15 +7,25 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MS Boilerplate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
   <link href="./dist/styles/index.css" rel="stylesheet">
+
 </head>
 
 <body>
   <!-- NAV -->
   <nav class="navbar navbar-expand-xl mainmenu mainmenu-background">
-    <div class="container-fluid">
+    <div class="container-fluid topbar__wrapper">
+      <div class="container topbar">
+        <div class="topbar__number"><a href="tel:788245999">+48 788 245 999</a> </div>
+        <div class="topbar__email"> <a href="mailto:biuro@miechow-residence.pl">biuro@miechow-residence.pl</a>
+        </div>
+
+      </div>
+    </div>
+    <div class="container-fluid mainmenu__wrapped">
       <a class="navbar-brand mainmenu__brand" href="#"><img src="./assets/logo.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-togglemenu="mainmenu__mobile">
         <span class="mainmenu__toggler"><i class="fas fa-bars"></i></span>
@@ -122,31 +132,47 @@
         <div class="project__content">
           <h3 class="text-center">ADRES: MIECHÓW, UL. RACŁAWICKA 109</h3>
           <p class="text-center">Typ zabudowy: domy jednorodzinne w zabudowie bliźniaczej</p>
-          <p class="text-justify"> Nikogo nie trzeba przekonywać do zalet mieszkania w domu jednorodzinnym.
-            Teraz możesz kupić dom w zabudowie bliźniaczej w doskonałej lokalizacji w cenie mieszkania a do tego bez
-            comiesięcznych opłat o charakterze czynszowym!
-            Osiedle domów w zabudowie bliźniaczej powstaje we wschodniej części Miechowa w obrębie ulicy Racławickiej.
-            W ramach inwestycji powstanie kameralne osiedle składające się z 13 bliźniaków (26 oddzielnych lokali
-            mieszkaniowych) Najbliższe otoczenie stanowi zabudowa jednorodzinna.
-            Budujemy w technologi tradycyjnej, murowanej stosując materiały budowlane uznanych i sprawdzonych
-            producentów. W ramach standardu wykończenia oferujemy kompletną instalację grzewczą z piecem gazowym i
-            grzejnikami.</p>
-          <p class="mt-2">Ponadto:</p>
-          <ul class="text-left">
-            <li>
-              na osiedlu nie występują żadne opłaty o charakterze czynszowym za wyjątkiem niewielkich opłat związanych z
-              utrzymaniem dróg wewnętrznych
-            </li>
-            <li>
-              osiedle jest uzbrojone we wszystkie media, w pełni skanalizowane
-            </li>
-            <li>
-              każdy z lokali ma możliwość indywidualnej aranżacji (w zależności od ogólnego stanu zaawansowania budowy i
-              kontraktowania prac).
-            </li>
-          </ul>
-          </p>
+          <div class="row">
+            <div class="col-xl-6 col-lg-12">
+              <img src="./assets/images/map.jpeg" alt="MAP">
+            </div>
+            <div class="col-xl-6 col-lg-12 project__text">
+
+              <p class="text-justify"> Nikogo nie trzeba przekonywać do zalet mieszkania w domu jednorodzinnym.
+                Teraz możesz kupić dom w zabudowie bliźniaczej w doskonałej lokalizacji w cenie mieszkania a do tego bez
+                comiesięcznych opłat o charakterze czynszowym!
+                Osiedle domów w zabudowie bliźniaczej powstaje we wschodniej części Miechowa w obrębie ulicy
+                Racławickiej.
+                W ramach inwestycji powstanie kameralne osiedle składające się z 13 bliźniaków (26 oddzielnych lokali
+                mieszkaniowych) Najbliższe otoczenie stanowi zabudowa jednorodzinna.
+                Budujemy w technologi tradycyjnej, murowanej stosując materiały budowlane uznanych i sprawdzonych
+                producentów. W ramach standardu wykończenia oferujemy kompletną instalację grzewczą z piecem gazowym i
+                grzejnikami.</p>
+              <p class="mt-2">Ponadto:</p>
+              <ul class="text-left">
+                <li>
+                  na osiedlu nie występują żadne opłaty o charakterze czynszowym za wyjątkiem niewielkich opłat
+                  związanych
+                  z
+                  utrzymaniem dróg wewnętrznych
+                </li>
+                <li>
+                  osiedle jest uzbrojone we wszystkie media, w pełni skanalizowane
+                </li>
+                <li>
+                  każdy z lokali ma możliwość indywidualnej aranżacji (w zależności od ogólnego stanu zaawansowania
+                  budowy
+                  i
+                  kontraktowania prac).
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+
+
         </div>
+
       </div>
     </section>
     <!-- PROJECT END -->
@@ -319,12 +345,12 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-3 numbers__item">
-                    <span>26</span>
-                    <h4>Mieszkań</h4>
+                    <span>3</span>
+                    <h4>Segmenty</h4>
                   </div>
                   <div class="col-md-3 numbers__item">
-                    <span>26</span>
-                    <h4>Podwórek</h4>
+                    <span>6</span>
+                    <h4>Lokali mieszkalnych</h4>
                   </div>
                   <div class="col-md-3 numbers__item">
                     <span>100%</span>
@@ -367,7 +393,7 @@
           </div>
           <div class="aboutus__image col-lg-6 col-md-12">
             <div class="aboutus__wrapper">
-              <img src="./assets/images/aboutus.jpg" class="img-fluid" alt="">
+              <img src="./assets/images/onas.jpg" class="img-fluid" alt="">
             </div>
           </div>
         </div>

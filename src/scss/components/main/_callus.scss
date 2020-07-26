@@ -42,7 +42,7 @@
         }
       }
       a{
-        color: $primary;
+        color: $secondary-light ;
         transition: .1s linear all;
         @include media-breakpoint-down(sm){
           font-size: 1.8rem;
