@@ -60,21 +60,25 @@
     transform: translate(-50%,-50%);
     text-align: center;
     h1{
-      a{
-        display: block;
-        width: 40vw;
-        img{
-          width: 100%;
-        }
-      }
-      // color: white;
-      // font-size: 5rem;
-      // line-height: 0.9;
-      // position: relative;
-      // span{
-      //   font-size: 7rem;
-      //   color: $primary;
+
+      // a{
+      //   display: block;
+      //   width: 40vw;
+      //   img{
+      //     width: 100%;
+      //   }
       // }
+      color: white;
+      font-size: 5rem;
+      line-height: 0.9;
+      position: relative;
+      padding-bottom: 1rem;
+      span{
+        font-size: 6rem;
+        color: $secondary;
+        text-transform: uppercase;
+        //text-shadow: -0.5px 0 #fff, 0 0.5px #fff, 0.5px 0 #fff, 0 -0.5px #fff;;
+      }
       &::after{
         content: "";
         height: 4px;
