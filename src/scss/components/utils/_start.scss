@@ -1,5 +1,22 @@
 .present{
  width: 100%;
+ .slider__heading{
+  h1{
+    transition: .15s linear all;
+    font-size: 5rem;
+    color: white;
+    span{
+      transition: .15s linear all;
+      font-size: 6rem;
+      color: white;
+
+    }
+  }
+  position: unset;
+  transform: unset;
+  top: unset;
+  left: unset;
+}
   &__item{
     position: relative;
     height: 100vh;
@@ -25,7 +42,7 @@
     &__park{
       .slider__heading{
         h1{
-          color: $primary;
+          color: white;
           span{
             color: white;
           }
@@ -90,6 +107,23 @@
       }
     }
   }
+  &__logo{
+    transition: .25s linear all;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    img{
+      width: 100%;
+    }
+    &-left{
+      left: 35%;
+    }
+    &-right{
+      left: 65%;
+    }
+  }
   &__text{
     text-align: center;
     color: white;
@@ -98,22 +132,31 @@
       font-size: 1.6rem;
     }
   }
-  .slider__heading{
-    h1{
-      transition: .15s linear all;
-      font-size: 5rem;
 
-      span{
-        transition: .15s linear all;
-        font-size: 6rem;
-
+  @media(max-width: 1450px){
+    &__logo{
+      width: 150px;
+    }
+    &__text{
+      h2{
+        font-size: 1.3rem;
       }
     }
-    position: unset;
-    transform: unset;
-    top: unset;
-    left: unset;
+    .slider__heading{
+      h1{
+        font-size: 3.5rem;
+        span{
+          font-size: 4.5rem;
+      }
+    }
   }
+}
+  @include media-breakpoint-down(lg){
+    &__logo{
+      width: 100px;
+    }
+  }
+
   @include media-breakpoint-down(sm){
     &__item{
       width: 100% !important;
@@ -127,6 +170,11 @@
       h2{
         font-size: 1.2rem;
       }
+    }
+    &__logo{
+      width: 200px;
+      top: 100%;
+      left: 50%;
     }
   }
 }
