@@ -34,7 +34,7 @@ body{
     .mainmenu__wrapped{
       padding: 10px 30px 10px 30px;
     }
-    .mainmenu__link{
+    .mainmenu__link,.mainmenu__link-nolink{
       color: $secondary;
       &:hover{
         color: $secondary;
@@ -68,7 +68,7 @@ body{
     justify-content: center;
     align-items: center;
   }
-  &__link{
+  &__link,&__link-nolink{
     transition: .15s linear all;
     font-size: 1.4rem;
     position: relative;
@@ -149,7 +149,7 @@ body{
       margin: 1rem 0 0 0;
       text-align: center;
     }
-    .mainmenu__link{
+    .mainmenu__link,.mainmenu__link-nolink{
       font-size: 1.4rem;
       text-align: center;
       color: $secondary;
