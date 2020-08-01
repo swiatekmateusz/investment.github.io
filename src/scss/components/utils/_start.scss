@@ -18,7 +18,7 @@
         left: 0;
         width: 100%;
         height: 100vh;
-        background-color: rgba(255,255,255,.2);
+        background-color: rgba(0,0,0,.4);
         transition: .15s linear all;
       }
     }
@@ -49,14 +49,21 @@
     }
     &-nothover{
       width: 35%;
-      // .slider__heading{
-      //   h1{
-      //     font-size: 3rem;
-      //     span{
-      //       font-size: 2rem;
-      //     }
-      //   }
-      // }
+      @include media-breakpoint-up(sm){
+        .slider__heading{
+          h1{
+            font-size: 3rem;
+            span{
+              font-size: 3.5rem;
+            }
+          }
+        }
+        .present__more{
+          a{
+            font-size: 1.2rem;
+          }
+        }
+      }
     }
   }
   &__content{
@@ -84,6 +91,12 @@
     }
   }
   .slider__heading{
+    h1{
+      transition: .15s linear all;
+      span{
+        transition: .15s linear all;
+      }
+    }
     position: unset;
     transform: unset;
     top: unset;
