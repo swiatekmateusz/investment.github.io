@@ -76,7 +76,7 @@
   }
   &__more{ 
     text-align: center;
-    margin: 4rem .5rem 1rem .5rem;
+    margin: 2rem .5rem 1rem .5rem;
     a{
       //text-transform: uppercase;
       background-color: $primary;
@@ -90,11 +90,23 @@
       }
     }
   }
+  &__text{
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
+    h2{
+      font-size: 1.6rem;
+    }
+  }
   .slider__heading{
     h1{
       transition: .15s linear all;
+      font-size: 5rem;
+
       span{
         transition: .15s linear all;
+        font-size: 6rem;
+
       }
     }
     position: unset;
@@ -109,6 +121,11 @@
     &__more{
       a{
         font-size: 1.4rem;
+      }
+    }
+    &__text{
+      h2{
+        font-size: 1.2rem;
       }
     }
   }
