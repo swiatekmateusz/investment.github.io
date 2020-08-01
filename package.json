@@ -7,10 +7,9 @@
     "prefix:scss": "postcss --use autoprefixer -b \"last 10 versions\" dist/styles/index.css -o dist/styles/index.css",
     "build:scss": "parallelshell  \"npm run compile:scss\" \"npm run prefix:scss\"",
     "watch:scss": "onchange -i -v \"./src/scss/**/*\" -- npm run build:scss",
-    "lint:js": "eslint --fix ./src/js/*.js",
     "bundle:js": "bundle-js src/js --dest dist/js/bundle.js --disable-beautify",
     "minify:js": "uglifyjs ./dist/js/bundle.js --output ./dist/js/bundle.js",
-    "update:js": "parallelshell \"npm run lint:js\" \"npm run minify:js\" \"npm run bundle:js\"",
+    "update:js": "parallelshell \"npm run minify:js\" \"npm run bundle:js\"",
     "watch:js": "onchange -i -v \"./src/js/**/*\" -- npm run update:js",
     "start": "browser-sync -s -f \"./index.html, dist/**/*, src/**/*\"",
     "watch:all": "parallelshell \"npm start\" \"npm run watch:scss\" \"npm run watch:js\""

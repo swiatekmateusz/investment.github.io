@@ -14,7 +14,7 @@ $('.mainmenu__link, .mainmenu__button a').each((i, item) => {
     const { top } = $(section).offset();
     const time = Math.floor(Math.abs(top - window.scrollY)) / 2;
     $([document.documentElement, document.body]).animate({
-      scrollTop: top,
+      scrollTop: top - 40,
     }, time < 1500 ? 1000 : time);
   });
 });
